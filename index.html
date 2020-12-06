@@ -23,6 +23,23 @@
 <style>
 
 
+  .map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+
+
     .our-team-main
     {
     width:100%;
@@ -92,14 +109,13 @@
     border-color:#777;
     transition:0.5s;
     }
-
     /*our-team-main*/
 
 
 </style>
 
   </head>
-  <body>
+  <body class="device-width">
     
     <!-- Fixed navbar -->
      <!-- navbar-fixed-top -->
@@ -134,20 +150,17 @@
           <div class="col-md-12 text-center text-intro probootstrap-animate">
             <h1>Kashish <em>&amp;</em> Priya</h1>
             <h2>Getting Married on December 10, 2020 &mdash; Moradabad, Mansarover Paradise</h2>
+            <p style="color: white;">" To our friends and family: We're so excited to celebrate our wedding with you. Find all the details you need to know about our big day here. "</p>
           </div>
         </div>
       </div>
-      <ul class="slides">
-        <li style="background-image: url(img/hero_bg_1.jpg)" data></li>
-        <li style="background-image: url(img/hero_bg_2.jpg)"></li>
-        <li style="background-image: url(img/hero_bg_3.jpg)"></li>
-      </ul>
+
     </section>
 
     <section class="probootstrap-section probootstrap-section-colored probootstrap-wedding-countdown">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center probootstrap-animate"><h4>The Wedding Begins In</h4></div>
+          <div class="col-md-12 text-center probootstrap-animate"><h4>The countdown until our forever is on.</h4></div>
           <div class="col-md-12 probootstrap-animate">
             <div class="date-countdown"></div>  
           </div>
@@ -166,8 +179,6 @@
               </figure>
               <span class="probootstrap-caption">The Groom</span>
               <h2 class="text-center">Kashish Mohan</h2>
-              <p>blah blah</p>
-    <p>blah blah</p>
             </div>
 
             <div class="probootstrap-divider probootstrap-animate"><span>&amp;</span></div>
@@ -178,14 +189,32 @@
               </figure>
               <span class="probootstrap-caption">The Bride</span>
               <h2 class="text-center">Priya Gupta</h2>
-              <p>blah blah</p>
-    <p>blah blah</p>
             </div>
 
           </div>
         </div>
       </div>
     </section>
+
+
+    <div class="container">
+      
+
+      <h4 class="mt0 text-center">Loving Lines For Wifey</h4>
+      <p class="mt-1">I am  blessed  to have a wife like you, because it is from the first day i saw you, i wanted to be with you forever and today is the day come with lots of loves, happiness and where we are going to tie a knot forever for that i am truly grateful to god for that.<br>Thanks for being a part of my life. I love you.!!
+</p>
+      <p style="text-align: right;">- Kashish Mohan</p>
+
+
+      <h4 class="mt0 text-center">Loving Lines For Hubby</h4>
+      <p class="mt-1">Its never enough to say what you mean to me, all could say is you make me complete and stronger than evere before.<br>
+      Walking by your side holding your hands for the rest of my life will be like living one of my dreams and i am even more excited to live rest of my dreams with you.!! </p>
+      <p style="text-align: right;">- Priya Gupta</p>
+    </div>
+
+
+
+
 
     <div class="probootstrap-section probootstrap-section-colored" data-section="when-where">
       <div class="container">
@@ -194,20 +223,26 @@
         </div>
         <div class="row">
           <div class="col-md-6 probootstrap-animate">  
-            <p><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded"></p>
+            <p><img  src="img/img_13.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded"></p>
             <h3>Wedding Ceremony</h3>
-            <p>blah blah</p>
+            <p>List of wedding ceremonies :-<br>Haldi - 8th Dec (12:00 P.M, at Line par) <br>Mehndi - 9th Dec (2:00 P.M, at Line par)<br>Bhaat - 10th Dec (11:00 A.M, at Hotel Mansarover Paradise)<br>Baraat aagman - 10th Dec (7:00 P.M, at Hotel Mansarover Paradise)</p>
     
           </div>
           <div class="col-md-6 probootstrap-animate">
-            <p><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded"></p>
+            <p><img src="img/img_14.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive img-rounded"></p>
             <h3>Wedding Party</h3>
-            <p>blah blah</p>
+            <p>List of wedding parties :-<br>Cocktail - 9th Dec (7:00 P.M, at Line par)<br>Grand Party - 10th Dec (7:00 P.M, at Hotel Mansarover Paradise)</p>
           </div>
         </div>
-       <div class="container">
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Mansarover%20Paradise&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/mapv2/">sites</a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:1080px;}</style></div>
-      </div>
+        <div class="container ">
+          <!--Google map-->
+<div id="map-container-google-1 probootstrap-animate" class="z-depth-1-half map-container" style="height: 300px">
+  <iframe src="https://maps.google.com/maps?q=mansarover%20paradise&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+    style="border:0" allowfullscreen></iframe>
+</div>
+
+<!--Google Maps-->
+        </div>
       </div>
     </div>
 
@@ -222,20 +257,20 @@
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="row probootstrap-gutter30">
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="img/img_3.jpg" style="background-image: url(img/img_3.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="img/img_2.jpg" style="background-image: url(img/img_2.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="img/img_2.jpg" style="background-image: url(img/img_2.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="img/img_1.jpg" style="background-image: url(img/img_1.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
             <div class="row probootstrap-gutter30">
               <div class="col-md-12 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="img/img_1.jpg" style="background-image: url(img/img_1.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="img/img_3.jpg" style="background-image: url(img/img_3.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -245,20 +280,20 @@
               <div class="col-md-6">
                 <div class="row probootstrap-gutter30">
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="img/img_4.jpg" style="background-image: url(img/img_4.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="img/img_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="img/img_5.jpg" style="background-image: url(img/img_5.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="img/img_5.jpg" style="background-image: url(img/img_5.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="img/img_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="img/img_8.jpg" style="background-image: url(img/img_8.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_8.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image  height-2x image-popup" href="img/img_6.jpg" style="background-image: url(img/img_6.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image  height-2x image-popup" href="img/img_7.jpg" style="background-image: url(img/img_7.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -272,20 +307,20 @@
               <div class="col-md-6">
                 <div class="row probootstrap-gutter30">
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="img/img_1.jpg" style="background-image: url(img/img_1.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="img/img_9.jpg" style="background-image: url(img/img_9.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_9.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                   <div class="col-md-12 probootstrap-animate">
-                    <a class="probootstrap-image image-popup" href="img/img_2.jpg" style="background-image: url(img/img_2.jpg)">
-                      <div class="probootstrap-image-for-popup"><img src="img/img_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                    <a class="probootstrap-image image-popup" href="img/img_10.jpg" style="background-image: url(img/img_10.jpg)">
+                      <div class="probootstrap-image-for-popup"><img src="img/img_10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image  height-2x image-popup" href="img/img_3.jpg" style="background-image: url(img/img_3.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image  height-2x image-popup" href="img/img_6.jpg" style="background-image: url(img/img_6.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -298,15 +333,15 @@
                 </a>
               </div>
               <div class="col-md-6 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="img/img_5.jpg" style="background-image: url(img/img_5.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="img/img_11.jpg" style="background-image: url(img/img_11.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_11.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
             <div class="row probootstrap-gutter30">
               <div class="col-md-12 probootstrap-animate">
-                <a class="probootstrap-image image-popup" href="img/img_6.jpg" style="background-image: url(img/img_6.jpg)">
-                  <div class="probootstrap-image-for-popup"><img src="img/img_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
+                <a class="probootstrap-image image-popup" href="img/img_12.jpg" style="background-image: url(img/img_12.jpg)">
+                  <div class="probootstrap-image-for-popup"><img src="img/img_12.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></div>
                 </a>
               </div>
             </div>
@@ -326,15 +361,15 @@
         <div class="row probootstrap-animate text-center">
           <div class="col-md-4">
             <span class="fa fa-mobile-phone fa-2x"></span>
-            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">Call us at<br>(+91)9205802590</p>
+            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">Call us at<br>(+91)9205802590 /<br> 7017834523</p>
           </div>
           <div class="col-md-4">
             <span class="fa fa-address-card-o fa-2x"></span>
-            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">10/15, Avas vikas, Buddhi vihar,<br>Moradabad, U.P (244103),<br>India</p>
+            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">58 B, Gayatri nagar,<br>Opp. Calton school, Line par<br>Moradabad, U.P (244001),<br>India</p>
           </div>
           <div class="col-md-4">
             <span class="fa fa-envelope-o fa-2x"></span>
-            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">Email us at<br>jaidevgoyal7@gmail.com</p>
+            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">Email us at<br>jaidevgoyal7@gmail.com /<br>devangmohan3@gmail.com</p>
           </div>
         </div>
         <div class="row probootstrap-animate text-center">
@@ -342,7 +377,7 @@
           </div>
           <div class="col-md-4">
             <span class="fa fa-instagram fa-2x"></span>
-            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">Instagram us at<br><a href="https://www.instagram.com/jaidev_goyal/">jaidev_goyal</a></p>
+            <p class="display-5 mt-1" style="font-style: italic;font-size: 20px">Instagram us at<br><a href="https://www.instagram.com/jaidev_goyal/">jaidev_goyal</a> /<br><a href="https://www.instagram.com/devang.gupta/">devang.gupta</a></p>
           </div>
         </div>
       </div>
@@ -377,7 +412,7 @@
                 <div class="team-back">
   <span>
 
-        Don't know what to write...
+        To know more about Jaidev/Jd message him on <a href="https://www.instagram.com/jaidev_goyal/">jaidev_goyal</a>. 
 
   </span>
                 </div>
@@ -400,7 +435,7 @@
                 <div class="team-back">
   <span>
 
-        Don't know what to write...
+        To know more about Devang/Vasu message him on <a href="https://www.instagram.com/devang.gupta/">devang.gupta</a>.
 
   </span>
                 </div>
@@ -425,9 +460,7 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
 
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
+    
 
   </body>
 </html>
